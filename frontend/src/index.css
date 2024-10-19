@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+body {
+  color: white;
+  background: linear-gradient(
+    -45deg,
+    #264653,
+    #2a9d8f,
+    #e9c46a,
+    #f4a261,
+    #e76f51
+  );
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

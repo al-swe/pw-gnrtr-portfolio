@@ -1,0 +1,83 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 30%;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+input {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.generate-disabled {
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
+
+.result {
+  display: flex;
+  opacity: 0;
+  transition: ease-in-out opacity 0.5s;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.result.visible {
+  opacity: 1;
+}
+
+.result button {
+  position: relative;
+  border-radius: 0 0.2rem 0.2rem 0;
+  width: 20%;
+}
+
+p {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0;
+  border-top: 2px solid white;
+  border-right: none;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem 0 0 0.2rem;
+  width: 80%;
+  overflow-wrap: break-word;
+}
